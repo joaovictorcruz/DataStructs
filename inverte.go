@@ -2,13 +2,6 @@ package main
 
 import "fmt"
 
-func main(){
-	inverterArray(1, 2, 3 ,4)
-
-	arr := []int{1,2, 3, 4}
-	inverteArray2(arr)
-}
-
 func inverterArray(a, b, c, d int) {
 	array := [4]int{a, b, c, d}
 	inv := []int{}
