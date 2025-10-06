@@ -19,3 +19,20 @@ func moveZeros(arr []int) []int{
 	fmt.Println(arr)
 	return arr
 }
+
+func moveZerosParaEsquerda(arr []int) []int{
+
+	a := 0
+	
+	for i:= len(arr) -1; i > 0; i--{
+		if arr[a] != 0 && arr[i] == 0{
+			arr[a], arr[i] = arr[i], arr[a]
+		}
+
+		if a != 0{
+			a++
+		}
+	}
+	fmt.Println(arr)
+	return arr
+}
